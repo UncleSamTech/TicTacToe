@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="first_human">You go first.</string>
+    <string name="turn_human">Your turn.</string>
+    <string name="turn_computer">Android\'s turn.</string>
+    <string name="turn_player_one">Player One\'s Turn.</string>
+    <string name="turn_player_two">Player Two\'s Turn.</string>
+    <string name="result_tie">It\'s a tie!</string>
+    <string name="result_human_wins">You Won!</string>
+    <string name="result_android_wins">Android Won!</string>
+    <string name="result_player_one_wins">Player One Wins!</string>
+    <string name="result_player_two_wins">Player Two Wins!</string>
+    <string name="one">P1</string>
+    <string name = "board_size">Board Size : </string>
+    <string name="two">P2</string>
+    <string name="three">P3</string>
+    <string name="four">P4</string>
+    <string name="five">P5</string>
+    <string name="six">P6</string>
+    <string name="seven">P7</string>
+    <string name="eight">P8</string>
+    <string name="nine">P9</string>
+    <string name="ten">P10</string>
+    <string name="eleven">P11</string>
+    <string name="twelve">P12</string>
+    <string name="thirteen">P13</string>
+    <string name="fourteen">P14</string>
+    <string name="fifteen">P15</string>
+    <string name="sixteen">P16</string>
+    <string name="seventeen">P17</string>
+    <string name="eighteen">P18</string>
+    <string name = "reset">Reset Game</string>
+    <string name = "expand">Expand Board Size</string>
+
+    <string name="nineteen">P19</string>
+    <string name="twenty">P20</string>
+    <string name="twenty_one">P21</string>
+    <string name="twenty_two">P22</string>
+    <string name="twenty_three">P23</string>
+    <string name="twenty_four">P24</string>
+    <string name="twenty_five">P25</string>
+    <string name="info">Info</string>
+    <string name="pos1">0</string>
+    <string name="human">Human:  </string>
+    <string name="player_one">Player One:  </string>
+    <string name="ties">Ties:  </string>
+    <string name="android">Android:  </string>
+    <string name="player_two">Player Two:  </string>
+    <string name="newGame_label">New Game</string>
+    <string name="exitGame_label">Exit Game</string>
+
+</resources>
