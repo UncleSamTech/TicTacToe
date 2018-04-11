@@ -66,8 +66,14 @@ increaseBoard = (Button)findViewById(R.id.increase_board);
         mBoardButtons2[9].setVisibility(View.GONE);
         mBoardButtons2[13].setVisibility(View.GONE);
         mBoardButtons2[14].setVisibility(View.GONE);
+        mBoardButtons2[15].setVisibility(View.GONE);
+        mBoardButtons2[16].setVisibility(View.GONE);
+        mBoardButtons2[17].setVisibility(View.GONE);
         mBoardButtons2[18].setVisibility(View.GONE);
         mBoardButtons2[19].setVisibility(View.GONE);
+ mBoardButtons2[20].setVisibility(View.GONE);
+        mBoardButtons2[21].setVisibility(View.GONE);
+        mBoardButtons2[22].setVisibility(View.GONE);
 
         mBoardButtons2[23].setVisibility(View.GONE);
         mBoardButtons2[24].setVisibility(View.GONE);
@@ -136,25 +142,46 @@ increaseBoard = (Button)findViewById(R.id.increase_board);
         mBoardButtons2[9].setVisibility(View.VISIBLE);
         mBoardButtons2[13].setVisibility(View.VISIBLE);
         mBoardButtons2[14].setVisibility(View.VISIBLE);
+        
+        mBoardButtons2[15].setVisibility(View.VISIBLE);
+        mBoardButtons2[16].setVisibility(View.VISIBLE);
+        
+        mBoardButtons2[17].setVisibility(View.VISIBLE);
+        
+        
         mBoardButtons2[18].setVisibility(View.VISIBLE);
         mBoardButtons2[19].setVisibility(View.VISIBLE);
+        
+        mBoardButtons2[20].setVisibility(View.VISIBLE);
+        mBoardButtons2[21].setVisibility(View.VISIBLE);
 
         mBoardButtons2[23].setVisibility(View.VISIBLE);
         mBoardButtons2[24].setVisibility(View.VISIBLE);
     }
     private void returnBoardToNormal(){
         board_size.setText("3");
-        mBoardButtons2[3].setVisibility(View.GONE);
-        mBoardButtons2[4].setVisibility(View.GONE);
-        mBoardButtons2[8].setVisibility(View.GONE);
-        mBoardButtons2[9].setVisibility(View.GONE);
-        mBoardButtons2[13].setVisibility(View.GONE);
-        mBoardButtons2[14].setVisibility(View.GONE);
-        mBoardButtons2[18].setVisibility(View.GONE);
-        mBoardButtons2[19].setVisibility(View.GONE);
+       
+        mBoardButtons2[3].setVisibility(View.VISIBLE);
+        mBoardButtons2[4].setVisibility(View.VISIBLE);
+        mBoardButtons2[8].setVisibility(View.VISIBLE);
+        mBoardButtons2[9].setVisibility(View.VISIBLE);
+        mBoardButtons2[13].setVisibility(View.VISIBLE);
+        mBoardButtons2[14].setVisibility(View.VISIBLE);
+        
+        mBoardButtons2[15].setVisibility(View.VISIBLE);
+        mBoardButtons2[16].setVisibility(View.VISIBLE);
+        
+        mBoardButtons2[17].setVisibility(View.VISIBLE);
+        
+        
+        mBoardButtons2[18].setVisibility(View.VISIBLE);
+        mBoardButtons2[19].setVisibility(View.VISIBLE);
+        
+        mBoardButtons2[20].setVisibility(View.VISIBLE);
+        mBoardButtons2[21].setVisibility(View.VISIBLE);
 
-        mBoardButtons2[23].setVisibility(View.GONE);
-        mBoardButtons2[24].setVisibility(View.GONE);
+        mBoardButtons2[23].setVisibility(View.VISIBLE);
+        mBoardButtons2[24].setVisibility(View.VISIBLE);
     }
 
     private void setMove(char player, int location)
