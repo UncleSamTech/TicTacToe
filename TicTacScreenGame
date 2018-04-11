@@ -15,8 +15,10 @@ public class TicTacScreenGame extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tic_tac_screen_game);
+        //Class instantiation for TicTacScreenGameObject class
         mGame = new TicTacScreenGameObject();
         mGame2 = new TicTacScreenGameObject2();
+        //Instantintion for the Button array
         mBoardButtons = new Button[mGame.getBOARD_SIZE()];
         mBoardButtons[0] = (Button) findViewById(R.id.one);
         mBoardButtons[1] = (Button) findViewById(R.id.two);
@@ -28,6 +30,7 @@ public class TicTacScreenGame extends AppCompatActivity {
         mBoardButtons[7] = (Button) findViewById(R.id.twelveth);
         mBoardButtons[8] = (Button) findViewById(R.id.thirteenth);
 
+//instantiation for the button array for getGame    
         mBoardButtons2 = new Button[mGame2.getBoardSize2()];
         mBoardButtons2[0] = (Button)findViewById(R.id.one);
         mBoardButtons2[1]=(Button)findViewById(R.id.two);
@@ -58,6 +61,7 @@ increaseBoard = (Button)findViewById(R.id.increase_board);
         mBoardButtons2[22] = (Button)findViewById(R.id.twentyth_three);
         mBoardButtons2[23]=(Button)findViewById(R.id.twentyth_four);
         mBoardButtons2[24]=(Button)findViewById(R.id.twentyth_five);
+        //method call for adding listener to button of 3 by 3
         addListenerOnButton();
 //set the other button to visibility false until user decides to increase board
         mBoardButtons2[3].setVisibility(View.GONE);
@@ -85,6 +89,7 @@ increaseBoard = (Button)findViewById(R.id.increase_board);
         mTieCount.setText(Integer.toString(mTieCounter));
         mPlayerTwoCount.setText(Integer.toString(mPlayerTwoCounter));
 
+//implementing click listener on board increment
         increaseBoard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -96,7 +101,7 @@ increaseBoard = (Button)findViewById(R.id.increase_board);
 
     }
 
-
+//Varoius Button and class Declaration
     private Button mBoardButtons[];
     private Button mBoardButtons2[];
     private Button increaseBoard;
@@ -127,7 +132,7 @@ increaseBoard = (Button)findViewById(R.id.increase_board);
     private boolean mIsPlayerOneTurn = true;
     private boolean mGameOver = false;
 
-
+//method that handles board increment button action clicked
     private void boardIncrement(){
         board_size.setText("5");
         mBoardButtons2[3].setVisibility(View.VISIBLE);
@@ -142,6 +147,8 @@ increaseBoard = (Button)findViewById(R.id.increase_board);
         mBoardButtons2[23].setVisibility(View.VISIBLE);
         mBoardButtons2[24].setVisibility(View.VISIBLE);
     }
+    
+    //method for returning board to normal size
     private void returnBoardToNormal(){
         board_size.setText("3");
         mBoardButtons2[3].setVisibility(View.GONE);
@@ -157,6 +164,7 @@ increaseBoard = (Button)findViewById(R.id.increase_board);
         mBoardButtons2[24].setVisibility(View.GONE);
     }
 
+//method for set game move for a 3 by 3
     private void setMove(char player, int location)
     {
         mGame.setMove(player, location);
@@ -167,6 +175,7 @@ increaseBoard = (Button)findViewById(R.id.increase_board);
             mBoardButtons[location].setBackground(getResources().getDrawable(R.drawable.o));
     }
 
+//method for set game move for a 5 by 5
     private void setMove2(char player, int location){
         mGame2.setMove2(player, location);
         mBoardButtons2[location].setEnabled(false);
@@ -178,6 +187,7 @@ increaseBoard = (Button)findViewById(R.id.increase_board);
         }
     }
 
+//method for adding listener on a button click on a 5 by 5
     public void addListenerOnButton2(){
         mNewGame = (Button)findViewById(R.id.NewGame);
         mNewGame.setOnClickListener(new View.OnClickListener() {
@@ -188,6 +198,7 @@ increaseBoard = (Button)findViewById(R.id.increase_board);
         });
     }
 
+    //method for adding listener on a button click on a 3 by 3
     public void addListenerOnButton(){
 
             mNewGame = (Button) findViewById(R.id.NewGame);
@@ -207,7 +218,7 @@ increaseBoard = (Button)findViewById(R.id.increase_board);
 
 
 
-
+//method for handling click action when new game button is clicked for a 5 by 5
     private void startNewGame2(boolean isSingle)
     {
 
@@ -264,7 +275,7 @@ increaseBoard = (Button)findViewById(R.id.increase_board);
 
 
 
-
+//method for handling click action when new game button is clicked for a 5 by 5
 
     private void startNewGame(boolean isSingle)
     {
